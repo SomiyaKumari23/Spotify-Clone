@@ -1,0 +1,238 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    margin:0;
+    color: white;
+    overflow: hidden;
+    font-weight: 500;
+}
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    height:100vh;
+}
+.sidebar{
+    background-color:black;
+    width: 300px;
+    border-radius:1rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    
+}
+.main-content{
+    background-color:#121212;
+    flex:1;/*bacchi space lelega*/
+    border-radius:1rem;
+    overflow: auto;/*scroll bar will be available if required*/
+    margin-top: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: rgb(11, 11, 11);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity:0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity:1;
+    
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    height: 100%;
+    padding: 0rem 0.75rem;
+    align-items: flex-start;
+    overflow:scroll;
+}
+.library::-webkit-scrollbar{
+    display: none;
+}
+.lib-option svg{
+    width: 1.5rem;
+    filter: invert(1);
+    margin-left: 0.5rem;
+}
+.lib-option:hover{
+    opacity: 1;
+}
+.lib-option{
+    display: flex;
+    width: 8rem;
+    opacity: 0.7;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    background-color: #121212;
+    margin-top: 0px;
+    padding: 0.5rem;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 1rem;
+  width: 2.5rem;
+  justify-content: space-between;
+}
+.fa-plus{
+  opacity:0.7;
+}
+.fa-arrow-right{
+    opacity:0.7;
+  }
+  .fa-plus:hover{
+    opacity:1;
+  }
+  .fa-arrow-right:hover{
+      opacity:1;
+}
+.box{
+    height: 9rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin:1.5rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.box-p2{
+    font-size:0.75rem;
+   
+}
+.badge{
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    width: fit-content;
+    height: 2rem;
+    transition-duration: 0.5s;
+}
+.badge:hover{
+    transform: scale(1.1);
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color:#121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+.arrows{
+    font-size: 1rem;
+    margin-left: 0.75rem;
+    display: flex;
+    background-color:#121212;
+    width: 5rem;
+    justify-content: space-between;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0rem 1rem 0rem 1rem;
+    gap:1rem;
+}
+.install{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.b1{
+   height: 10.5rem;
+}
+.original-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card{
+    width: 150px;
+    background-color: rgb(32, 33, 33);
+    border-radius: 0.75rem;
+    padding:1em;
+    
+}
+.card:hover{
+    background-color: #343232;
+}
+.card img{
+   width:100%;
+}
+.name1{
+    font-weight: 900;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.name2{
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+}
+h2{
+  font-weight: 900;
+}
+.spotify-original{
+    margin-top: 2rem;
+}
+.circle{
+    border-radius: 100%;
+    width: 2rem;
+    height: 1.5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
